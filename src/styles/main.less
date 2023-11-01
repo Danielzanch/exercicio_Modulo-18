@@ -1,0 +1,118 @@
+@import "var.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1920px;
+    max-height: 100%;
+    background-color: rgb(0, 0, 0)
+}
+
+.style_Photos {
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+.style_Categoria {
+    
+    max-height: 214px;
+    display: flex;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.style_Hover {
+    padding: 0;
+    margin-left: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+
+header {
+    h1 {
+        padding: 10px;
+        margin-left: 10%;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+.style_Geral {
+    padding: 40px 0;
+    background-image: url("../../img/textura-de-couro-de-luxo-com-fundo-de-pele-marrom-padrao-genuino_84485-2195.avif");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.my-photos {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h1 {
+        background-color: #ffffff4a;
+        border-radius: 4px;
+        
+    }
+
+    &-family {
+        .style_Categoria();
+
+        :hover {
+            .style_Hover
+        }
+
+        img {
+            .style_Photos();
+        }
+    }
+
+    &-friends {
+        .style_Categoria();
+
+        :hover {
+            .style_Hover
+        }
+
+        img {
+            .style_Photos();
+        }
+    }
+
+    &-trip {
+        .style_Categoria();
+
+        :hover {
+            .style_Hover
+        }
+
+        img {
+            .style_Photos();
+        }
+    }
+
+    &-nav {
+        margin-top: 20px;
+        pointer-events:visibleStroke;
+        max-width: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        height: 177px;
+        position: absolute;
+        
+        #btn-next, #btn-prev {
+            background-color: #ffffffa9;
+            border: none;
+        }
+    }
+}
